@@ -1,0 +1,20 @@
+// columns.js
+
+export const COLUMNS = [
+    {
+        Header: 'Old Avestan',
+        accessor: 'oldWord',
+    },
+    {
+        Header: 'Younger Avestan',
+        accessor: 'youngerWord',
+    },
+    {
+        Header: 'Part of Speech',
+        accessor: 'partOfSpeech',
+    },
+    {
+        Header: 'Definitions',
+        accessor: 'definitions',
+    },
+];

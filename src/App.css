@@ -1,5 +1,10 @@
 .App {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  gap: 1px;
   text-align: center;
+  background-color: #ff8888;
 }
 
 .App-logo {
@@ -15,13 +20,56 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row: 1;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: mediumpurple;
+}
+
+.App-footer {
+  background-color: #00C;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row: 5; 
+}
+
+.App-data {
+  background-color: #0C0;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.left-bar {
+  background-color: #DDD;
+  grid-column: 1;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.right-bar {
+  background-color: #DDD;
+  grid-column: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+table td {
+  border-left: 1px solid #C00;
+  border-right: 1px solid #C00;
+}
+
+.list-group-item:nth-child(even) {background: #606060}
+
+.list-group {
+  flex-direction: row;
+  background-color: #808080;
+  color: #61dafb;
 }
 
 .App-link {
